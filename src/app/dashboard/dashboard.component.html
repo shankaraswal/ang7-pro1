@@ -1,0 +1,15 @@
+<div class="container">
+  <h2 class="title pageTitle">{{title}}</h2>
+  <div class="row">
+    <div *ngFor="let hero of heroes" class="col-lg-4 my-3" routerLink="/detail/{{hero.id}}">
+      <div class="card border-danger px-1">
+        <div class="card-header text-danger">
+          <h3></h3>
+        </div>
+        <div class="card-body text-danger">
+          <h5 class="card-title">{{hero.name}}</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
